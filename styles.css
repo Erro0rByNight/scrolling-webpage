@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+body {
+    background: linear-gradient(#581845,#273746);
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    width: 95%;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 30px;
+}
+
+header ul li a {
+    padding: 12px;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+header ul li a:hover, .active {
+    background-color: #fff;
+    color: #581845;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main img {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main #moon2 {
+    mix-blend-mode: screen;
+    transform: translateY(120px);
+}
+
+.main::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top, #581845, transparent);
+}
+
+.nouvil {
+    text-transform: uppercase;
+    color: rgb(220, 214, 214);
+    font-size: 25px;
+    transform: translateY(-160px);
+}
+
+.content {
+    color: #fff;
+    padding: 30px;
+}
+
+.content h2 {
+    margin: 30px;
+    font-size: 30px;
+}
+
+.content p {
+    margin: 30px;
+
+}
